@@ -1,3 +1,15 @@
+<?php
+
+if (!defined('URL')){
+    header("location: /");
+    exit();
+}
+
+//var_dump($this->dados['noticias']);
+//exit;
+
+//echo "<br />View HOME <br />";
+//var_dump($this->dados['carousel']);?>
 <!-- HEADER -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -6,19 +18,19 @@
   <title>Wash My Possante!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="./images/wmp-logo.png" >
+  <link rel="shortcut icon" href="<?= URL; ?>assets/img/wmp-logo.png" >
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/fonts/icomoon/style.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/aos.css">
+  <link rel="stylesheet" href="<?= URL; ?>assets/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -37,7 +49,7 @@
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html"> <img src="./images/wmp-logo.png" alt="logo"> WashMyPossante!</a></div>
+          <div class="site-logo mr-auto w-25"><a href="index.html"> <img src="<?= URL; ?>assets/img/wmp-logo.png" alt="logo"> WashMyPossante!</a></div>
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
@@ -65,7 +77,7 @@
 
     <!-- MAIN -->
     <div class="intro-section" id="home-section">
-      <div class="slide-1" style="background-image: url('images/hero_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="slide-1" style="background-image: url('<?= URL; ?>assets/img/hero_1.jpg');" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12">
@@ -74,7 +86,7 @@
                   <h1 data-aos="fade-up" data-aos-delay="100">Seja um membro desta comunidade!</h1>
                   <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p data-aos="fade-up" data-aos-delay="300"><a href="./PerfilLavador/register.html"
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="<?= URL; ?>PerfilLavador/register.html"
                       onclick="document.getElementById('id01').style.display='block'"
                       class="btn btn-primary py-3 px-5 btn-pill">Registre-se</a></p>
                   </div>
@@ -89,7 +101,7 @@
                       <input type="password" class="form-control" placeholder="Senha">
                     </div>
                     <div class="form-group">
-                      <a href="./PerfilLavador/index.html"><input type="submit" class="btn btn-primary btn-pill" value="Login"></a>
+                      <a href="<?= URL; ?>PerfilLavador/index.html"><input type="submit" class="btn btn-primary btn-pill" value="Login"></a>
                     </div>
                   </form>
                 </div>
@@ -385,20 +397,20 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery-3.3.1.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery-ui.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/popper.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/bootstrap.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/owl.carousel.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery.stellar.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery.countdown.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/bootstrap-datepicker.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery.easing.1.3.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/aos.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery.fancybox.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/jquery.sticky.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
-  <script src="js/main.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery-3.3.1.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery-migrate-3.0.1.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery-ui.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/popper.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/bootstrap.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/owl.carousel.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery.stellar.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery.countdown.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/bootstrap-datepicker.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery.easing.1.3.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/aos.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery.fancybox.min.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/jquery.sticky.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
+  <script src="<?= URL; ?>assets/js/main.js" type="93e7951aafb82f93dba161f0-text/javascript"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
     type="93e7951aafb82f93dba161f0-text/javascript"></script>
